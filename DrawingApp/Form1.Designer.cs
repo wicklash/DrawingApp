@@ -52,12 +52,13 @@
             this.btnGreen = new System.Windows.Forms.Button();
             this.btnBlue = new System.Windows.Forms.Button();
             this.btnRed = new System.Windows.Forms.Button();
-            this.drawingPanel = new System.Windows.Forms.Panel();
+            this.drawingPanel = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.drawingPanel)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,9 +69,9 @@
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(875, 0);
+            this.panel1.Location = new System.Drawing.Point(877, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(160, 654);
+            this.panel1.Size = new System.Drawing.Size(158, 654);
             this.panel1.TabIndex = 0;
             // 
             // groupBox5
@@ -346,12 +347,12 @@
             // 
             // drawingPanel
             // 
-            this.drawingPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.drawingPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.drawingPanel.Location = new System.Drawing.Point(0, 0);
             this.drawingPanel.Name = "drawingPanel";
             this.drawingPanel.Size = new System.Drawing.Size(876, 654);
             this.drawingPanel.TabIndex = 1;
+            this.drawingPanel.TabStop = false;
             this.drawingPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.drawingPanel_Paint);
             this.drawingPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.drawingPanel_MouseDown);
             this.drawingPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.drawingPanel_MouseMove);
@@ -371,6 +372,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.drawingPanel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -378,7 +380,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel drawingPanel;
         private System.Windows.Forms.Button btnRectangle;
         private System.Windows.Forms.Button btnCircle;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -401,6 +402,7 @@
         private System.Windows.Forms.Button btnBlue;
         private System.Windows.Forms.Button btnSaveFile;
         private System.Windows.Forms.Button btnOpenFile;
+        private System.Windows.Forms.PictureBox drawingPanel;
     }
 }
 
